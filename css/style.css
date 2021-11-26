@@ -1,0 +1,1278 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    vertical-align: center;
+}
+.bg-img{
+  background-image: url(../images/pexels-neale-lasalle-631477.jpg); 
+  width: 100%; 
+  height:100%; 
+  background-position: center; 
+  background-size: cover; 
+  background-repeat: no-repeat;   
+  background-attachment: fixed;
+}
+.row > * {
+  padding-left: 0!important;
+  padding-right: 0!important;
+}
+/* *********************************************************************************************************************************  
+contact Part Start
+********************************************************************************************************************************* */
+#contact{
+  background-color: #272727;
+  transform: scale(1);
+  opacity: .5;
+}
+.contact-text {
+	padding: 15px 0;
+  color: #fff;
+}
+.contact-text p {
+	margin-bottom: 0 !important;
+	display: inline-block;
+	margin: 0px 10px 0 45px;
+  opacity: 1;
+
+}
+.contact-text p a{
+  color: #fff;
+  margin-left: 10px;
+}
+.contact-icon p a {
+	color: #272727;
+	background-color: #fff;
+	display: inline-block;
+	border-radius: 50%;
+	height: 25px;
+	width: 25px;
+	text-align: center;
+	line-height: 25px;
+	font-size: 13px;
+}
+.contact-icon {
+	padding: 15px 0;
+  color: #272727;
+}
+.contact-icon p {
+	margin-bottom: 0 !important;
+	display: inline-block;
+	margin: 0px 30px 0 0px;
+}
+
+/* *********************************************************************************************************************************  
+Heading Part Start
+********************************************************************************************************************************* */
+.mukut-logo img {
+	width: 25%;
+}
+.mukut-logo:hover::after{
+    opacity: 1;
+    transition: .3s;
+    z-index: 11;
+}
+.my-nav-bar ul li a {
+	color: #fff !important;
+	font-size: 15px;
+}
+.my-nav-after:hover::after{
+    background-color: #E0CB2F;
+    width: 100%;
+    transition: 0.3s;
+}
+.my-nav-after{
+    margin-right: 25px;
+    position: relative;
+}
+.my-nav-after::after{
+    position: absolute;
+    content: '';
+    width: 20%;
+    height: 1px;
+    background-color: transparent;
+    bottom: 0;
+    left: 0;
+}
+.hire-me{
+    border: 2px solid #fff;
+    padding: 0 15px;
+    border-radius: 22px;
+    margin-left: 10px;
+    color: white!important;
+}
+.hire-me:hover{
+  border: 2px solid #E0CB2F;
+  transition: 0.3s;
+}
+.hire-me:hover a{
+    color: white!important;
+    transition: 0.3s;
+}
+#menu{
+    background-color: #303030;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    overflow: hidden;
+    z-index: 9999999;
+    box-shadow: 1px 3px 33px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 3px 33px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 3px 33px -3px rgba(0,0,0,0.75);
+}
+.navbar-brand{
+  padding: 0!important;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+/* *********************************************************************************************************************************  
+banner Part Start
+********************************************************************************************************************************* */
+.carousel-indicators .active {
+	background-color: #E0CB2F;
+}
+/* *********************************************************************************************************************************  
+ show-services Part start
+********************************************************************************************************************************* */
+#show-svc{
+  padding: 50px 0;
+}
+.show-svc-img-main{
+  position: relative;
+  width: 90%;
+  height: 100%;
+}
+.show-svc-img-ovr{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.486);
+  top: 0;
+  left: 0;
+}
+.show-svc-img-main::after{
+  position: absolute;
+  width: 90%;
+  height: 80%;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(255, 255, 255, 0.63);
+}
+.show-svc-img-text {
+	position: absolute;
+	bottom: 25px;
+	left: 9%;
+	/* transform: translateY(-50%); */
+	z-index: 1;
+}
+.show-svc-img-text h6 {
+	color: #f9f9f9;
+	font-size: 21px;
+	padding: 0 30px 0 0;
+	font-weight: lighter;
+	letter-spacing: 1px;
+}
+.show-svc-img-text a {
+	color: #f9f9f9;
+	font-size: 13px;
+}
+.ordernow{
+  position: relative;
+}
+.ordernow::after {
+	position: absolute;
+	content: "\00bb";
+	top: -8px;
+	right: -20px;
+	transform: scale(0);
+	padding-left: 25px;
+	font-size: 20px;
+}
+.ordernow:hover::after{
+  transform: scale(1);
+  transition: .3s;
+}
+/* *********************************************************************************************************************************  
+Potfolio Part start
+********************************************************************************************************************************* */
+#portfolio{
+  padding: 5% 0 5% 0;
+}
+.porfolio h3{
+  color: white;
+  display: inline-block;
+  position: relative;
+}
+.porfolio h3::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #E0CB2F;
+  bottom: -10px;
+  left: 0;
+}
+
+.porfolio-slider{
+  margin: 35px 0;
+}
+.porfolio-img .slick-prev, .slick-next {
+	font-size: 0;
+	line-height: 0;
+	position: absolute;
+	top: 50%;
+	display: block;
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	cursor: pointer;
+	color: #000 !important;
+	border: none;
+	outline: none;
+	background: #E0CB2F !important;
+	border-radius: 50%;
+	z-index: 1;
+}
+.porfolio-img .slick-prev {
+	left: -50px!important;
+}
+.porfolio-img .slick-next {
+	right: -50px!important;
+}
+.porfolio-img-text img{
+  width: 100%;
+  margin: 10px;
+  position: relative;
+}
+.porfolio-show-text {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 25px;
+  opacity: 0;
+}
+.porfolio-show-text a {
+	background-color: yellow;
+	padding: 50%;
+	color: black;
+	border-radius: 50%;
+}
+.porfolio-active{
+opacity: .7;
+}
+.porfolio-img-text:hover img{
+  cursor: pointer;
+  opacity: .7;
+  transition: .3s;
+}
+.porfolio-img-text:hover .porfolio-show-text{
+  opacity: 1;
+  transition: .3s;
+}
+.porfolio-img ul {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.porfolio-img ul li {
+	display: inline-block;
+	text-align: center;
+	margin: 15px 10px;
+	font-size: 0;
+	/* padding: 8px; */
+	background-color: #fff;
+	border-radius: 50%;
+}
+.porfolio-img ul li button {
+	/* color: transparent; */
+	padding: 0 10px 0 0;
+	font-size: 12px;
+	border-radius: 50%;
+	border: 2px solid white;
+	background-color: none;
+	opacity: 0;
+}
+.porfolio-img ul li button:focus:not(:focus-visible) {
+	outline: 0;
+}
+.porfolio-img ul .slick-active {
+	border-radius: 50%;
+	background-color: yellow;
+}
+/* *********************************************************************************************************************************  
+Skill Part start
+********************************************************************************************************************************* */
+#skill{
+  padding: 5% 0 5% 0;
+}
+.skill h3{
+  color: white;
+  display: inline-block;
+  position: relative;
+}
+.skill h3::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #E0CB2F;
+  bottom: -10px;
+  left: 0;
+}
+.skill-items{
+  margin: 20px 0;
+}
+.skill-items .progressbar-item h4 {
+	color: #fff !important;
+	margin-top: 30px;
+}
+/* *********************************************************************************************************************************  
+Review Part start
+********************************************************************************************************************************* */
+#review{
+  padding: 5% 0 5% 0;
+}
+.review h3{
+  color: white;
+  display: inline-block;
+  position: relative;
+}
+.review h3::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #E0CB2F;
+  bottom: -10px;
+  left: 0;
+}
+/* Review Part  */
+.review-gap {
+	background-color: #303030;
+	border-radius: 5px;
+	width: 95%;
+	color: white;
+	position: relative;
+	padding: 12px 20px;
+	height: 150px;
+  border: .2px solid rgba(255, 255, 255, 0.37);
+}
+.review-gap-absulate {
+	position: absolute;
+	top: 14px;
+	left: 106px;
+}
+.review-gap-absulate h5 {
+	font-size: 17px;
+}
+.review-gap-absulate h5 span {
+	color: #FFB33E;
+	padding: 0 0 0 10px;
+}
+.review-gap h6 img {
+	padding: 0 14px 0 0;
+}
+.review-main{
+  padding: 50px 0;
+}
+.review-items h2 img {
+	width: 10%;
+	height: 10%;
+	border-radius: 50%;
+	border: 2px solid #fff;
+}
+.review-gap h6{
+  display: inline-block;
+}
+.review-gap h6 img {
+	display: inline;
+}
+/* Review Button start */
+.review-main ul {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.review-main ul li {
+	display: inline-block;
+	text-align: center;
+	margin: 15px 10px;
+	font-size: 0;
+	background-color: #fff;
+	border-radius: 50%;
+}
+.review-main ul li button {
+	padding: 0 5px 0 0;
+	font-size: 5px;
+	border-radius: 50%;
+	border: 2px solid white;
+	background-color: none;
+	opacity: 0;
+}
+.review-main ul li button:focus:not(:focus-visible) {
+	outline: 0;
+}
+.review-main ul .slick-active {
+	border-radius: 50%;
+	background-color: yellow;
+}
+/* Review Button End */
+/* *********************************************************************************************************************************  
+Review Part start
+********************************************************************************************************************************* */
+#about-me{
+  padding: 5% 0 5% 0;
+}
+.about-me h3{
+  color: white;
+  display: inline-block;
+  position: relative;
+}
+.about-me h3::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #E0CB2F;
+  bottom: -10px;
+  left: 0;
+}
+/* About me Part start */
+.about-me-main {
+	margin: 50px 0 0 0;
+}
+.about-me-text h3 span img {
+	width: 6%;
+  animation: myLogo 5s ease 0s infinite normal forwards;
+}
+@keyframes myLogo {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.about-me-text {
+	background-color: #303030;
+	border: .2px solid rgba(255, 255, 255, 0.37);
+	width: 70%;
+	padding: 20px 35px !important;
+	border-radius: 10px;
+	color: #fff;
+	position: relative;
+	height: 230px;
+	margin: 40px 0 0 0;
+}
+.about-me-text::after {
+	position: absolute;
+	content: '';
+	height: 50px;
+	width: 50px;
+	background-color: #303030;
+	left: 105px;
+	top: -20px;
+	/* transform: translateY(-40%); */
+	transform: rotate(45deg);
+	border-radius: 3px;
+	z-index: -1;
+	border: .2px solid rgba(255, 255, 255, 0.37);
+}
+.about-me-dp h2 img {
+	width: 80%;
+	border-radius: 50%;
+	border: 3px solid white;
+}
+.about-me-text h3 {
+	font-size: 25px;
+	padding: 0;
+	margin: 0;
+}
+.about-me-text h4 {
+	font-size: 17px;
+}
+.about-me-text h5 {
+	font-size: 16px;
+	line-height: 1.7;
+	margin: 15px 0 0 0;
+	display: inline-block;
+}
+/* About me Part End */
+/* *********************************************************************************************************************************  
+Price Part start
+********************************************************************************************************************************* */
+#price{
+  padding: 5% 0 5% 0;
+}
+.price h3{
+  color: white;
+  display: inline-block;
+  position: relative;
+}
+.price h3::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #E0CB2F;
+  bottom: -10px;
+  left: 0;
+}
+/* Price Part start */
+.price-head{
+  margin:  50px 0;
+}
+.price-main {
+  color: white;
+}
+.price-side {
+	border: 2px solid #E0CB2F;
+	padding: 30px 0;
+	margin: 35px 0px;
+}
+.price-side h2 {
+	font-size: 20px;
+	text-align: center;
+}
+.price-side h3 {
+	font-size: 16px;
+  text-align: center;
+}
+.price-side h4 {
+	border: 2px solid #E0CB2F;
+	display: inline-block;
+	padding: 8px 67px;
+	margin: 12px 0;
+	margin: 13px 0 35px 104px;
+}
+.price-side h4 span {
+	font-size: 13px;
+  text-align: center;
+}
+.price-side p {
+	padding: 5px 0 0 122px;
+	position: relative;
+	display: block;
+}
+.price-side p::after {
+	position: absolute;
+	content: '';
+	width: 235px;
+	height: 2px;
+	background-color: #C9C9C959;
+	bottom: -13px;
+	left: 88px;
+}
+.price-side p i {
+	margin: 0 25px 0 0;
+}
+.price-side .disabled{
+  color: rgba(255, 255, 255, 0.397);
+}
+.price-side a {
+	display: inline-block;
+	text-align: center;
+	margin: 35px 0 0 90px;
+	padding: 19px 76px;
+	background-color: #E0CB2F;
+	color: #fff;
+}
+/* price-middle */
+.price-middle{
+  border: 2px solid #E0CB2F;
+  background-color: #E0CB2F;
+	padding: 50px 0;
+  color: #000;
+}
+
+.price-middle h2 {
+	font-size: 20px;
+	text-align: center;
+}
+.price-middle h3 {
+	font-size: 16px;
+  text-align: center;
+}
+.price-middle h4 {
+	border: 2px solid #FFF;
+	display: inline-block;
+	padding: 8px 67px;
+	margin: 12px 0;
+	margin: 13px 0 35px 104px;
+	background-color: #fff;
+	color: #000;
+}
+.price-middle h4 span {
+	font-size: 13px;
+  text-align: center;
+}
+.price-middle p {
+	padding: 5px 0 0 118px;
+	position: relative;
+	display: block;
+}
+.price-middle p::after {
+	position: absolute;
+	content: '';
+	width: 235px;
+	height: 2px;
+	background-color: #00000059;
+	bottom: -13px;
+	left: 88px;
+}
+.price-middle p i {
+	margin: 0 25px 0 0;
+}
+.price-middle .disabled{
+  color: rgba(255, 255, 255, 0.397);
+}
+.price-middle a {
+	display: inline-block;
+	text-align: center;
+	margin: 35px 0 0 90px;
+	padding: 19px 76px;
+	background-color: #000;
+	color: #fff;
+}
+.price-middle a:hover{
+  background-color: rgba(0, 0, 0, 0.849);
+  transition: .3s;
+}
+/* Price Part End */
+/* *********************************************************************************************************************************  
+footer Part start
+********************************************************************************************************************************* */
+#footer {
+	padding: 0% 0 0% 0;
+}
+.footer-wish {
+	border: 2px solid #E0CB2F;
+	color: #fff;
+	padding: 14px 0 0 0;
+	font-size: 25px;
+	border-radius: 5px;
+}
+.footer-copy {
+	background-color: #303030;
+	color: #fff;
+	padding: 30px 0 20px 0px;
+	font-size: 15px;
+	margin-top: 100px;
+}
+/* Price Part start */
+/* *********************************************************************************************************************************  
+Live chat
+********************************************************************************************************************************* */
+#button {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #button::after {
+    content: url('../images/download-\(2\).png');
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #button:hover {
+    cursor: pointer;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* Styles for the content section */
+  .content {
+    width: 77%;
+    margin: 50px auto;
+    font-family: 'Merriweather', serif;
+    font-size: 17px;
+    color: #6c767a;
+    line-height: 1.9;
+  }
+  @media (min-width: 500px) {
+    .content {
+      width: 43%;
+    }
+    #button {
+      margin: 30px;
+    }
+  }
+  .content h1 {
+    margin-bottom: -10px;
+    color: #03a9f4;
+    line-height: 1.5;
+  }
+  .content h3 {
+    font-style: italic;
+    color: #96a2a7;
+}
+/* *********************************************************************************************************************************  
+media screen Start max-width: 1399px
+********************************************************************************************************************************* */
+@media screen and (max-width: 1399px){
+  .navbar-brand{
+    width: 30%;
+  }
+  .my-nav-bar{
+    width: 70%;
+  }
+  .mukut-logo img {
+    width: 50%;
+      position: relative;
+  }
+  .show-svc-img-text h6 {
+    font-size: 15px;
+    letter-spacing: 0px;
+  }
+  .about-me-text h3 span img {
+    width: 8%;
+  }
+  .price-side h4 {
+    border: 2px solid #E0CB2F;
+    display: inline-block;
+    padding: 8px 67px;
+    margin: 13px 0 35px 83px;
+  }
+  .price-side p {
+    padding: 5px 0 0 94px;
+    position: relative;
+    display: block;
+  }
+  .price-side p::after {
+    position: absolute;
+    content: '';
+    width: 235px;
+    height: 2px;
+    background-color: #C9C9C959;
+    bottom: -13px;
+    left: 70px;
+  }
+  .price-side a {
+    display: inline-block;
+    text-align: center;
+    margin: 35px 0 0 73px;
+    padding: 19px 76px;
+    background-color: #E0CB2F;
+    color: #fff;
+  }
+  .price-middle p::after {
+    position: absolute;
+    content: '';
+    width: 235px;
+    height: 2px;
+    background-color: #00000059;
+    bottom: -13px;
+    left: 75px;
+  }
+  .price-middle h4 {
+    border: 2px solid #FFF;
+    display: inline-block;
+    padding: 8px 67px;
+    margin: 12px 0;
+    margin: 13px 0 35px 83px;
+    background-color: #fff;
+    color: #000;
+  }
+  .price-middle a {
+    display: inline-block;
+    text-align: center;
+    margin: 35px 0 0 80px;
+    padding: 19px 76px;
+    background-color: #000;
+    color: #fff;
+  }
+}
+/* *********************************************************************************************************************************  
+media screen Start max-width: 991px
+********************************************************************************************************************************* */
+@media screen and (max-width: 991px) {
+  .hire-me {
+    margin-left: 0px;
+    margin-top: 10px;
+    border: 0px solid black;
+    padding: 0;
+    border-radius: 0;
+    color: white!important;
+  }
+  .hire-me:hover{
+    background-color: transparent;
+    border: 0px solid black;
+}
+.hire-me:hover a{
+  color: #E0CB2F!important;
+}
+  .mukut-logo:hover::after{
+    display: none;
+  }
+  .my-nav-after:hover::after{
+    background-color: white;
+    width: 20%;
+    transition: 0.3s;
+  }
+  .my-nav-after
+  {
+    margin-top: 10px;
+  }
+  .navbar-light .navbar-toggler {
+
+    border-color: #fff!important;
+  }
+  .navbar-brand{
+    width: 50%;
+  }
+  .mukut-logo img {
+    width: 50%;
+      position: relative;
+  }
+  #contact{
+    display: none;
+  }
+  .col-lg-4.col-md-12.col-sm-12.col-12.show-svc-img.d-flex.justify-content-center {
+    margin: 10px 0px;
+  }
+  .review-items h2 img {
+    width: 20%;
+  }
+  .review-gap {
+    height: 200px;
+  }
+  .show-svc-img-text h6 {
+    font-size: 30px;
+    letter-spacing: 0px;
+  }
+  .about-me-text {
+    height: 275px;
+  }
+  .about-me-text::after {
+    left: 45px;
+  }
+  .about-me-text h3 span img {
+    width: 11%;
+  }
+  .price-side h4 {
+    border: 2px solid #E0CB2F;
+    display: inline-block;
+    padding: 8px 67px;
+    margin: 13px 0 35px 244px;
+  }
+  .price-side p {
+    padding: 5px 0 0 252px;
+    position: relative;
+    display: block;
+  }
+  .price-side p::after {
+    position: absolute;
+    content: '';
+    width: 235px;
+    height: 2px;
+    background-color: #C9C9C959;
+    bottom: -13px;
+    left: 232px;
+  }
+  .price-side a {
+    display: inline-block;
+    text-align: center;
+    margin: 35px 0 0 233px;
+    padding: 19px 76px;
+    background-color: #E0CB2F;
+    color: #fff;
+  }
+  .price-middle p {
+    padding: 5px 0 0 250px;
+    position: relative;
+    display: block;
+  }
+  .price-middle p::after {
+    position: absolute;
+    content: '';
+    width: 235px;
+    height: 2px;
+    background-color: #00000059;
+    bottom: -13px;
+    left: 223px;
+  }
+  .price-middle h4 {
+    border: 2px solid #FFF;
+    display: inline-block;
+    padding: 8px 67px;
+    margin: 13px 0 35px 231px;
+    background-color: #fff;
+    color: #000;
+  }
+  .price-middle a {
+    display: inline-block;
+    text-align: center;
+    margin: 35px 0 0 225px;
+    padding: 19px 76px;
+    background-color: #000;
+    color: #fff;
+  }
+}
+/* *********************************************************************************************************************************  
+media screen Start max-width: 767px
+********************************************************************************************************************************* */
+@media screen and (max-width: 767px){
+  .navbar-brand{
+    width: 50%;
+  }
+  .mukut-logo img {
+    width: 80%;
+      position: relative;
+  }
+  .review-items h2 img {
+    width: 60%;
+  }
+  .review-gap {
+    height: 399px;
+  }
+  .about-me-text {
+    height: 270px;
+    width: 100%;
+  }
+  .about-me-text::after {
+    left: 28px;
+  }
+  #price {
+    margin: 0 13px;
+  }
+  .price-side h4 {
+    border: 2px solid #E0CB2F;
+    display: inline-block;
+    padding: 8px 67px;
+    margin: 13px 0 35px 154px;
+  }
+  .price-side p {
+    padding: 5px 0 0 162px;
+    position: relative;
+    display: block;
+  }
+  .price-side p::after {
+    position: absolute;
+    content: '';
+    width: 235px;
+    height: 2px;
+    background-color: #C9C9C959;
+    bottom: -13px;
+    left: 136px;
+  }
+  .price-side a {
+    display: inline-block;
+    text-align: center;
+    margin: 35px 0 0 136px;
+    padding: 19px 76px;
+    background-color: #E0CB2F;
+    color: #fff;
+  }
+  .price-middle p {
+	padding: 5px 0 0 115px;
+	position: relative;
+	display: block;
+}
+  .price-middle p::after {
+    position: absolute;
+    content: '';
+    width: 235px;
+    height: 2px;
+    background-color: #00000059;
+    bottom: -13px;
+    left: 136px;
+  }
+  .price-middle h4 {
+    border: 2px solid #FFF;
+    display: inline-block;
+    padding: 8px 67px;
+    margin: 12px 0px;
+    margin: 13px 0 35px 145px;
+    background-color: #fff;
+    color: #000;
+  }
+  .price-middle a {
+    display: inline-block;
+    text-align: center;
+    margin: 35px 0 0 136px;
+    padding: 19px 76px;
+    background-color: #000;
+    color: #fff;
+  }
+  .porfolio-show-text {
+    opacity: 1;
+  }
+  .review-gap p {
+    padding: 96px 0 0 0;
+  }
+  .review-gap-absulate {
+    position: absolute;
+    top: 151px;
+    left: 21px;
+  }
+  #about-me {
+    margin: 0 13px;
+  }
+  #review {
+    margin: 0 13px;
+  }
+  #skill {
+    margin: 0 13px;
+  }
+  #portfolio {
+    margin: 0 13px;
+  }
+}
+/* *********************************************************************************************************************************  
+media screen Start (max-width: 480px)
+********************************************************************************************************************************* */
+@media screen and (max-width: 480px){
+  .porfolio-img ul li {
+    display: inline-block;
+    text-align: center;
+    margin: 8px 5px;
+    font-size: 0;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  .porfolio-img ul li button {
+    padding: 0 3px 0 0;
+    font-size: 5px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: none;
+    opacity: 0;
+  }
+  .porfolio-show-text {
+    font-size: 18px;
+  }
+  .show-svc-img-text h6 {
+    font-size: 15px;
+    padding: 0 15px 0 0;
+    letter-spacing: 0px;
+  }
+  .porfolio h3 {
+    margin-left: 13px;
+  }
+  #skill {
+    margin: 0 40px 0 13px;
+  }
+  .porfolio h3::before {
+    position: absolute;
+    content: url(../images/hand.png);
+    width: 100%;
+    height: 1px;
+    background-color: transparent;
+    bottom: -100px;
+    animation: myAnim 2s ease 1s 3 normal forwards;
+    right: -95px;
+    z-index: 1;
+  }
+  @keyframes myAnim {
+    0%,
+    50%,
+    100% {
+      opacity: 1;
+    }
+  
+    25%,
+    75% {
+      opacity: 0;
+    }
+  }
+  .review-gap {
+    height: 450px;
+    margin: 0 0 0 5px;
+  }
+  .review-gap p {
+    padding: 88px 0 0 0;
+  }
+  .review-gap-absulate {
+    top: 106px;
+    left: 7px;
+  }
+  .review-main ul li {
+    margin: 15px 4px;
+  }
+  #review {
+    margin: 0 40px 0 13px;
+  }
+  #about-me {
+    margin: 0 13px;
+  }
+  #price {
+    margin: 0 13px;
+  }
+  .about-me-dp h2 img {
+    width: 150%;
+  }
+  .about-me-text {
+    height: 365px;
+  }
+  .about-me-text::after {
+    left: 50px;
+  }
+  .about-me-text h3 span img {
+    width: 13%;
+  }
+  .price-side h4 {
+    border: 2px solid #E0CB2F;
+    display: inline-block;
+    padding: 8px 67px;
+    margin: 13px 0 35px 57px;
+  }
+  .price-side p {
+    padding: 5px 0 0 73px;
+    position: relative;
+    display: block;
+  }
+  .price-side p::after {
+    position: absolute;
+    content: '';
+    width: 235px;
+    height: 2px;
+    background-color: #C9C9C959;
+    bottom: -13px;
+    left: 44px;
+  }
+  .price-side a {
+    display: inline-block;
+    text-align: center;
+    margin: 35px 0 0 47px;
+    padding: 19px 76px;
+    background-color: #E0CB2F;
+    color: #fff;
+  }
+  .price-middle p {
+    padding: 5px 0 0 64px;
+    position: relative;
+    display: block;
+  }
+  .price-middle p::after {
+    position: absolute;
+    content: '';
+    width: 235px;
+    height: 2px;
+    background-color: #00000059;
+    bottom: -13px;
+    left: 41px;
+  }
+  .price-middle h4 {
+    border: 2px solid #FFF;
+    display: inline-block;
+    padding: 8px 67px;
+    margin: 12px 0;
+    margin: 13px 0 35px 48px;
+    background-color: #fff;
+    color: #000;
+  }
+  .price-middle a {
+    display: inline-block;
+    text-align: center;
+    margin: 35px 0 0 41px;
+    padding: 19px 76px;
+    background-color: #000;
+    color: #fff;
+  }
+  #footer {
+    margin: 0 15px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
